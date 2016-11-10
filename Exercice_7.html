@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_7</title>
+        <meta charset="UTF-8">
+
+
+    </head>
+
+
+    <body>
+
+      <script type="text/javascript" language="javascript">
+      function Valid() {
+        var Result1 = document.getElementById('pointure').value;
+        var Result2 = document.getElementById('annee').value;
+        var Data1 = (Result1) * 2;
+        var Data3 = (Data1) + 5;
+        var Data4 = (Data3) * 50;
+        var Data5 = (Data4) - (Result2);
+        var Resultat = (Data5) + 1766;
+
+
+        alert ("Le résultat est :" + Resultat );
+
+      }
+
+
+      </script>
+
+        <form name="form1">
+            <label for="pointure">Pointure : </label><input type="text" id="pointure" name="pointure"/><br/>
+            <label for="annee">Année de naissance : </label><input type="text" id="annee" name="annee"/><br/>
+            <button id="valider" name="valider" onclick="Valid()">Valider</button>
+
+        </form>
+
+
+    </body>
+</html>
